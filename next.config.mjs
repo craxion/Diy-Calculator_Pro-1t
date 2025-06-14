@@ -9,12 +9,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
-
-export default nextConfig
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // ... any other configs you have
   async redirects() {
     return [
       // --- CONSTRUCTION & HOME IMPROVEMENT ---
