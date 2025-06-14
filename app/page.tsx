@@ -118,9 +118,16 @@ export default function HomePage() {
                         {implementedCalculators.slice(0, 3).map((calc) => (
                           <li key={calc.name} className="flex items-center">
                             <CheckCircle className="h-4 w-4 text-primary-orange/70 mr-2 flex-shrink-0" />
-                            <span className="text-medium-grey">{calc.name.replace(" Calculator", "")}</span>
+                            <span className="text-medium-grey">{calc.name}</span>
                           </li>
                         ))}
+                        {implementedCalculators.length > 3 && (
+                          <li className="flex items-center">
+                            <span className="text-xs text-medium-grey/70 ml-6">
+                              +{implementedCalculators.length - 3} more tools
+                            </span>
+                          </li>
+                        )}
                       </ul>
                     )}
                   </CardContent>

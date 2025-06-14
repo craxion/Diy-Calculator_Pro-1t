@@ -66,6 +66,7 @@ export const calculatorCategories = {
     { name: "Retaining Wall Calculator", implemented: false },
   ],
   "Painting and Finishing": [
+    { name: "Paint Project Calculator", implemented: true },
     { name: "Paint Coverage Calculator", implemented: false },
     { name: "Wallpaper Calculator", implemented: false },
     { name: "Tile Calculator", implemented: false },
