@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { PaintBucket, Calculator, ArrowRight } from "lucide-react"
+import { PaintBucket, Calculator, ArrowRight, Paintbrush } from "lucide-react"
 
 export default function PaintingAndFinishingPage() {
   const calculators = [
@@ -12,6 +12,14 @@ export default function PaintingAndFinishingPage() {
       href: "/calculators/painting-and-finishing/paint-project-calculator",
       icon: PaintBucket,
       features: ["Room dimensions", "Door & window exclusions", "Multiple coats", "Cost estimation"],
+    },
+    {
+      title: "Deck Stain & Sealer Calculator",
+      description:
+        "Calculate the exact amount of stain or sealer needed for your deck, including railings, spindles, and stairs.",
+      href: "/calculators/painting-and-finishing/deck-stain-and-sealer-calculator",
+      icon: Paintbrush,
+      features: ["Deck shapes", "Railings & spindles", "Stairs included", "Wood condition factors"],
     },
   ]
 

@@ -67,6 +67,7 @@ export const calculatorCategories = {
   ],
   "Painting and Finishing": [
     { name: "Paint Project Calculator", implemented: true },
+    { name: "Deck Stain & Sealer Calculator", implemented: true },
     { name: "Paint Coverage Calculator", implemented: false },
     { name: "Wallpaper Calculator", implemented: false },
     { name: "Tile Calculator", implemented: false },
