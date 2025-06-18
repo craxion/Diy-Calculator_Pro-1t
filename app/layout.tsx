@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     "Your go-to source for accurate project calculators. Plan smarter, build better with professional DIY calculators for construction, landscaping, carpentry and more.",
   keywords: "DIY calculator, construction calculator, project planning, material estimation, cost calculator",
   generator: "v0.dev",
+  other: {
+    monetag: "5124e6ebf4a1051867a7c073c15c5657",
+  },
 }
 
 export default function RootLayout({
@@ -45,13 +48,6 @@ export default function RootLayout({
           fontSans.variable, // Apply the Inter font variable
         )}
       >
-        <Script
-          src="https://fpyf8.com/88/tag.min.js"
-          data-zone="152675"
-          async
-          data-cfasync="false"
-          strategy="afterInteractive"
-        />
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
           <div className="min-h-screen flex flex-col bg-brand-white">
             {" "}
