@@ -40,7 +40,7 @@ export const calculatorCategories = {
     { name: "Concrete Slab Calculator", implemented: true },
     { name: "Excavation Volume and Cost Calculator", implemented: true },
     { name: "Wall Framing Calculator", implemented: true },
-    { name: "Fraction Calculator", implemented: true }, // Added here
+    { name: "Fraction Calculator", implemented: true },
     { name: "Concrete Footings Calculator", implemented: false },
     { name: "Brick and Block Calculator", implemented: false },
     { name: "Mortar and Grout Calculator", implemented: false },
@@ -75,14 +75,14 @@ export const calculatorCategories = {
     { name: "Flooring Calculator", implemented: false },
   ],
   "Electrical and Plumbing": [
-    { name: "Ohms Law Calculator", implemented: false },
+    { name: "Ohms Law Calculator", implemented: true },
     { name: "Wire Gauge Calculator", implemented: false },
     { name: "Pipe Volume Calculator", implemented: false },
     { name: "Tank Volume Calculator", implemented: false },
   ],
   "Conversions and Math": [
     { name: "Advanced Triangle Calculator", implemented: true },
-    { name: "Fraction Calculator", implemented: true }, // Added here
+    { name: "Fraction Calculator", implemented: true },
     { name: "Length Converter", implemented: false },
     { name: "Area Converter", implemented: false },
     { name: "Volume Converter", implemented: false },
@@ -92,6 +92,7 @@ export const calculatorCategories = {
     { name: "Ratio Calculator", implemented: false },
   ],
   "Household Solutions and Mixing": [{ name: "Chemical and Liquid Dilution Calculator", implemented: true }],
+  "Home and Craft Projects": [{ name: "Resin and Epoxy Calculator", implemented: true }],
 }
 
 /**

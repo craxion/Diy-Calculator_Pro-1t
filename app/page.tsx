@@ -14,6 +14,8 @@ import {
   ArrowRight,
   CheckCircle,
   TrendingUp,
+  Zap,
+  Palette,
 } from "lucide-react" // Updated Home to HomeIcon
 import { calculatorCategories, createUrlSlug } from "@/lib/utils/url-slug"
 import { AnimatedOnScroll } from "@/components/animated-on-scroll" // Import animation component
@@ -24,8 +26,9 @@ const categoryPlaceHolderIcons = {
   "Carpentry and Woodworking": Wrench,
   "Landscaping and Outdoor": HomeIcon, // Changed from Home to HomeIcon
   "Painting and Finishing": Paintbrush,
-  "Electrical and Plumbing": Wrench, // Placeholder, consider specific icon like Zap or Plug
+  "Electrical and Plumbing": Zap, // Changed from Wrench to Zap for electrical
   "Conversions and Math": Ruler,
+  "Home and Craft Projects": Palette, // New category icon
 }
 
 const featuredCalculators = Object.values(calculatorCategories)
