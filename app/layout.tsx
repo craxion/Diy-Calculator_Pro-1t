@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     "Your go-to source for accurate project calculators. Plan smarter, build better with professional DIY calculators for construction, landscaping, carpentry and more.",
   keywords: "DIY calculator, construction calculator, project planning, material estimation, cost calculator",
   generator: "v0.dev",
+  other: {
+    monetag: "5124e6ebf4a1051867a7c073c15c5657",
+  },
 }
 
 export default function RootLayout({
