@@ -51,6 +51,7 @@ export const calculatorCategories = {
   ],
   "Carpentry and Woodworking": [
     { name: "Lumber Cut Optimizer", implemented: true },
+    { name: "Wall Framing Calculator", implemented: true },
     { name: "Lumber Board Foot Calculator", implemented: false },
     { name: "Decking Calculator", implemented: false },
     { name: "Stairs Calculator", implemented: false },
