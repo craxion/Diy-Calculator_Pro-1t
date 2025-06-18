@@ -7,6 +7,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { cn } from "@/lib/utils" // For conditionally joining class names
 import { PageTransition } from "@/components/page-transition" // Import PageTransition
+import Script from "next/script"
 
 // Initialize Inter font with variable
 const fontSans = FontSans({
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "Your go-to source for accurate project calculators. Plan smarter, build better with professional DIY calculators for construction, landscaping, carpentry and more.",
   keywords: "DIY calculator, construction calculator, project planning, material estimation, cost calculator",
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -30,6 +31,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1035186774095395"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased", // Use font-sans from Tailwind config

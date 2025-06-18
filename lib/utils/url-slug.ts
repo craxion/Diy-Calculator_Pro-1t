@@ -40,6 +40,7 @@ export const calculatorCategories = {
     { name: "Concrete Slab Calculator", implemented: true },
     { name: "Excavation Volume and Cost Calculator", implemented: true },
     { name: "Wall Framing Calculator", implemented: true },
+    { name: "Fraction Calculator", implemented: true }, // Added here
     { name: "Concrete Footings Calculator", implemented: false },
     { name: "Brick and Block Calculator", implemented: false },
     { name: "Mortar and Grout Calculator", implemented: false },
@@ -80,6 +81,8 @@ export const calculatorCategories = {
     { name: "Tank Volume Calculator", implemented: false },
   ],
   "Conversions and Math": [
+    { name: "Advanced Triangle Calculator", implemented: true },
+    { name: "Fraction Calculator", implemented: true }, // Added here
     { name: "Length Converter", implemented: false },
     { name: "Area Converter", implemented: false },
     { name: "Volume Converter", implemented: false },
@@ -87,7 +90,6 @@ export const calculatorCategories = {
     { name: "Temperature Converter", implemented: false },
     { name: "Percentage Calculator", implemented: false },
     { name: "Ratio Calculator", implemented: false },
-    { name: "Right Triangle Calculator", implemented: false },
   ],
   "Household Solutions and Mixing": [{ name: "Chemical and Liquid Dilution Calculator", implemented: true }],
 }
