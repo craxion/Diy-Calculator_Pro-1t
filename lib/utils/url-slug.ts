@@ -84,9 +84,9 @@ export const calculatorCategories = {
   "Conversions and Math": [
     { name: "Advanced Triangle Calculator", implemented: true },
     { name: "Fraction Calculator", implemented: true },
-    { name: "Length Converter", implemented: false },
-    { name: "Area Converter", implemented: false },
-    { name: "Volume Converter", implemented: false },
+    { name: "Length Converter", implemented: true },
+    { name: "Area Converter", implemented: true },
+    { name: "Volume Converter", implemented: true },
     { name: "Weight Converter", implemented: false },
     { name: "Temperature Converter", implemented: false },
     { name: "Percentage Calculator", implemented: false },
