@@ -99,56 +99,44 @@ export default function HomePage() {
 
             return (
               <AnimatedOnScroll animationType="slide-up-fade" key={category} className="h-full">
-                <Card className="bg-brand-white hover:shadow-xl transition-all duration-300 ease-in-out border-light-grey/80 group h-full flex flex-col">
-                  <CardHeader className="pb-4">
-                    <div className="flex items-center space-x-3 mb-2">
-                      <div className="p-3 bg-primary-orange/10 rounded-lg group-hover:bg-primary-orange/20 transition-colors">
-                        <IconComponent className="h-7 w-7 text-primary-orange" />
+                <Link href={`/calculators/${createUrlSlug(category)}`}>
+                  <Card className="bg-brand-white hover:bg-blue-50 hover:shadow-xl transition-all duration-300 ease-in-out border-light-grey/80 group h-full flex flex-col cursor-pointer transform hover:scale-[1.02]">
+                    <CardHeader className="pb-4">
+                      <div className="flex items-center space-x-3 mb-2">
+                        <div className="p-3 bg-primary-orange/10 rounded-lg group-hover:bg-primary-orange/20 transition-colors">
+                          <IconComponent className="h-7 w-7 text-primary-orange" />
+                        </div>
+                        <CardTitle className="text-xl text-dark-grey group-hover:text-primary-orange transition-colors">
+                          {category}
+                        </CardTitle>
                       </div>
-                      <CardTitle className="text-xl text-dark-grey group-hover:text-primary-orange transition-colors">
-                        {category}
-                      </CardTitle>
-                    </div>
-                    <CardDescription className="text-sm text-medium-grey line-clamp-2">
-                      {implementedCalculators.length > 0
-                        ? `${implementedCalculators.length} tools for ${category.toLowerCase()}`
-                        : "Calculators coming soon!"}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="flex-grow">
-                    {implementedCalculators.length > 0 && (
-                      <ul className="space-y-1.5 text-sm mb-4">
-                        {implementedCalculators.slice(0, 3).map((calc) => (
-                          <li key={calc.name} className="flex items-center">
-                            <CheckCircle className="h-4 w-4 text-primary-orange/70 mr-2 flex-shrink-0" />
-                            <span className="text-medium-grey">{calc.name}</span>
-                          </li>
-                        ))}
-                        {implementedCalculators.length > 3 && (
-                          <li className="flex items-center">
-                            <span className="text-xs text-medium-grey/70 ml-6">
-                              +{implementedCalculators.length - 3} more tools
-                            </span>
-                          </li>
-                        )}
-                      </ul>
-                    )}
-                  </CardContent>
-                  <div className="p-6 pt-0 mt-auto">
-                    {" "}
-                    {/* Footer of card */}
-                    <Button
-                      asChild
-                      className="w-full group/button"
-                      variant={implementedCalculators.length > 0 ? "default" : "outline"}
-                    >
-                      <Link href={`/calculators/${createUrlSlug(category)}`}>
-                        {implementedCalculators.length > 0 ? "View Tools" : "Explore Category"}
-                        <ArrowRight className="ml-2 h-4 w-4 group-hover/button:translate-x-1 transition-transform" />
-                      </Link>
-                    </Button>
-                  </div>
-                </Card>
+                      <CardDescription className="text-sm text-medium-grey line-clamp-2">
+                        {implementedCalculators.length > 0
+                          ? `${implementedCalculators.length} tools for ${category.toLowerCase()}`
+                          : "Calculators coming soon!"}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                      {implementedCalculators.length > 0 && (
+                        <ul className="space-y-1.5 text-sm mb-4">
+                          {implementedCalculators.slice(0, 3).map((calc) => (
+                            <li key={calc.name} className="flex items-center">
+                              <CheckCircle className="h-4 w-4 text-primary-orange/70 mr-2 flex-shrink-0" />
+                              <span className="text-medium-grey">{calc.name}</span>
+                            </li>
+                          ))}
+                          {implementedCalculators.length > 3 && (
+                            <li className="flex items-center">
+                              <span className="text-xs text-medium-grey/70 ml-6">
+                                +{implementedCalculators.length - 3} more tools
+                              </span>
+                            </li>
+                          )}
+                        </ul>
+                      )}
+                    </CardContent>
+                  </Card>
+                </Link>
               </AnimatedOnScroll>
             )
           })}
